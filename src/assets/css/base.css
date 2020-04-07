@@ -1,5 +1,7 @@
 @import "./normalize.css";
 
+/* :root 伪类 获取根元素 就是html  */
+/* --color-text  就是获取变量 引用var(--color-text)*/
 :root {
   --color-text: #666;
   --color-high-text: #ff5777;
@@ -31,7 +33,10 @@ a {
   text-decoration: none;
 }
 
-
+img {
+  display: block;
+  font-size: 0;
+}
 .clear-fix::after {
   clear: both;
   content: '';
@@ -62,5 +67,9 @@ a {
 
 .right {
   float: right;
+}
+
+ul,li {
+  list-style: none;
 }
 
